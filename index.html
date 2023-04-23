@@ -1,0 +1,45 @@
+<!-- 
+  Project 3: Working With APIS
+  League of Legends Stats at Multiple Ranks
+  Eric Ferguson
+  VDES39915
+  WINTER 2023
+  Harold Sikkema
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Champion Bar Graph</title>
+                <link rel="stylesheet" href="style.css">
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                </head>
+                <body>
+                    <div id="chartsContainer">
+
+                        <div id="chartContainer" class="backgroundChart">
+                            <canvas id="championPickR4" class="canvas1"></canvas>
+                        </div>
+                        <div id="chartContainer2" class="backgroundChart">
+                            <canvas id="championWinR4" class="canvas2"></canvas>
+                        </div>
+                        <div id="chartContainer3" class="backgroundChart">
+                            <canvas id="championBanR4" class="canvas3"></canvas>
+                        </div>
+                        <div id="buttonContainer" class="backgroundChart">
+                            <h1 id="title" class="title" style="color: #f4eded;">
+                                Averaged League of Legends Champion Stats</h1>
+                            <button id="ironButton" class="rankButton" onclick="ironClick();"></button>
+                            <button id="goldButton" class="rankButton" onclick="goldClick();"></button>
+                            <button id="masButton" class="rankButton" onclick="masClick();"></button>
+                            <button id="avgButton" class="rankButton" onclick="avgClick();"></button>
+                        </div>
+                    </div>
+                    <script src="/JS/ironGraphs.js"></script>
+                    <script src="/JS/goldGraphs.js"></script>
+                    <script src="/JS/masGraphs.js"></script>
+                    <script src="/JS/avgGraphs.js"></script>
+                    <script src="/JS/button.js"></script>
+                </body>
+            </html>
